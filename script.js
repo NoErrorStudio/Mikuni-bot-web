@@ -26,7 +26,7 @@ $(document).ready(function() {
       "simple",
       "powerful",
       "easy to use",
-      "cute",
+      "a music bot",
       "your Waifu",
       "made with love",
       "Hot",
