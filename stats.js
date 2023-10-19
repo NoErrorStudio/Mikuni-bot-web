@@ -2,8 +2,10 @@ function fetchData() {
 	fetch('https://api.statcord.com/v3/884467910494535741').then(response => {
 		return response.json();
 	}).then(data => {
+		let Data = true;
+		let servers = 519;
 		console.log(data.data[0].servers);
-		document.querySelector('#server-count').innerHTML = `<h4>${data.data[0].servers}`
+		document.querySelector('#server-count').innerHTML = Data ? `<h4>${servers}` : `<h4>${data.data[0].servers}`
 		console.log(data.data[0].users);
 		document.querySelector('#user-count').innerHTML = `<h4>${data.data[0].users}`
         console.log(data.data[0].users);
